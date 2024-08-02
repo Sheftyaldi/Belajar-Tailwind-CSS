@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en>
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,6 +21,20 @@
             colors: {
               luck: "#bada55",
               laut: "#c0ffee",
+            },
+            animation: {
+              'spin-slow': 'spin 3s linear infinite',
+              'goyang': 'goyang 4s ease-in-out infinite',
+            },
+            keyframes: {
+              goyang: {
+                '0%,100%': {
+                  transform: 'rotate(-3deg)',
+                },
+                '50%': {
+                  transform: 'rotate(3deg)'
+                }
+              },
             },
           },
         },
@@ -190,6 +204,25 @@
         </label>
       </form>
     </div>
+
+    <hr class="my-20"></hr>
+
+    <div class="mx-auto w-36 h-36 bg-blue-500 rounded-lg hover:scale-125 hover:rotate-45 hover:translate-x-16 animation-spin-slow "></div>
+
+    
+      <div class="mt-20 mx-auto w-36 h-36 bg-pink-500 rounded-lg animate-goyang"></div>
+
+
+      <hr class="my-20 border-t-4" >
+
+      <div class="container">
+        <div class="m-20 h-40 w-11/12 shadow-xl mx-auto block rounded-md p-6 relative border-green-600 ">
+          <div class="bg-blue-500 w-10 h-10 flex rounded-full fixed bottom-5 right-5 cursor-pointer"><a href="#" class="text-xl m-auto">🔝</a></div>
+          <img src="img/1.jpeg" alt="gambar" class="w-20 float-left mr-3">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae ducimus saepe quaerat. Cum iure consequatur illo dolores, et architecto. Molestias animi aspernatur deleniti ut ab quidem dolores ipsam totam assumenda. Eum, excepturi nobis? Totam odit, cupiditate quo, illo iusto sunt ex cumque repellendus est nihil molestias enim, qui rem iure! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque tempora unde nesciunt natus modi fugiat doloribus sint nulla sunt minus temporibus asperiores suscipit expedita, impedit, numquam laboriosam sed tempore! Porro ipsum dolores autem repellat sit perspiciatis, itaque error dolore laborum vel optio sequi ipsam ducimus eos ipsa temporibus ullam quibusdam!</p>
+        </div>
+      </div>
+
 
     <div class="mb-96"></div>
     <script>
